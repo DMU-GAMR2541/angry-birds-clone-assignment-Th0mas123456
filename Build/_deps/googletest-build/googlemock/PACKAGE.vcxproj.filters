@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\78e0fff72ca4c5177e34440f612830bd\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{58420153-A835-3990-8ECE-38EC57AD1107}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

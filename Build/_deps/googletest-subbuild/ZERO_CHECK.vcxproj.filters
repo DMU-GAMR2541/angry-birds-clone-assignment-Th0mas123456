@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-subbuild\CMakeFiles\b93745b897c1d74cf207a1086c4c3823\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{350F4212-5773-3261-ADBA-72CDE83C99BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

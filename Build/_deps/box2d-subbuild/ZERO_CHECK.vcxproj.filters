@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7d40f68a1e735580b91dfb59e83d850c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A88DCAF5-84EE-33DE-876E-0EE807847F35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
