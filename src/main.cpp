@@ -1,8 +1,15 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include "Bird.h"
 
 int main() {
+
+    DynamicObject* dyBird;
+    Bird bird;
+    dyBird = &bird;
+    std::cout << std::to_string(bird.upCast());
+    std::cout << std::to_string(dyBird->upCast());
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
@@ -136,6 +143,6 @@ int main() {
 
         window.display();
     }
-
+    
     return 0;
 }
