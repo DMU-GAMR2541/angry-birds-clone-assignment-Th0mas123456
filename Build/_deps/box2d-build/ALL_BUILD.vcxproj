@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8CCEEDB8-777C-380B-B3D4-3E49DE36F33E}</ProjectGuid>
+    <ProjectGuid>{E23E162C-9720-318C-BD51-D9E97557030B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -36,22 +36,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\CMakeLists.txt">
+    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,46 +159,47 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\GNUInstallDirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
-      <Project>{198C8CA7-421A-3B3A-B038-29243F8457A6}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
+      <Project>{ABAE107D-90F1-3C15-992B-3BC4BF5A317F}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
-      <Project>{04EAB4D4-1781-3767-BC5E-1B6BB497F3D6}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
+      <Project>{AACA47C9-81FF-3962-8D7F-67588F733D8B}</Project>
       <Name>box2d</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
-      <Project>{216900EB-782A-3E3D-ACC2-2752ABACDC27}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
+      <Project>{B5E26584-6BC4-39BD-8B67-8622C2C0C02D}</Project>
       <Name>glad</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
-      <Project>{A7B22C91-5FDF-3A7C-B634-C2542BD5E249}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
+      <Project>{E0D16BB7-2E9A-3320-BEBB-C9F6311611CB}</Project>
       <Name>glfw</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
-      <Project>{3C35EE41-277A-38A4-9699-03EE52119EEA}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
+      <Project>{F023332A-062B-3843-A152-113089A349F0}</Project>
       <Name>imgui</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
-      <Project>{C2539AB5-E95D-3EBC-95DE-6336F4AA8F91}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
+      <Project>{C0425024-F43A-3EE0-9191-BE537699CC63}</Project>
       <Name>sajson</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\testbed.vcxproj">
-      <Project>{AC06ED8A-19CB-34D9-A9CA-F6573C0091E8}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\testbed.vcxproj">
+      <Project>{9E8D89F8-B1AE-373D-8606-AEAE88FF96D4}</Project>
       <Name>testbed</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\unit-test\unit_test.vcxproj">
-      <Project>{0F263CFD-9B71-3D10-A146-7EE1E2EE579F}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\unit-test\unit_test.vcxproj">
+      <Project>{6BDE1410-EC26-37E4-A9DA-E282CB9A95B4}</Project>
       <Name>unit_test</Name>
     </ProjectReference>
   </ItemGroup>

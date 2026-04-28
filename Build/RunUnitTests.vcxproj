@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E5ED83A2-3B1B-3E2F-BAC3-7F0AF656CBFF}</ProjectGuid>
+    <ProjectGuid>{F5F0974D-D369-37DE-87EF-97289B5D82ED}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RunUnitTests.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RunUnitTests</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RunUnitTests.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RunUnitTests</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RunUnitTests.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RunUnitTests</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RunUnitTests.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RunUnitTests</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,20 +86,26 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SFML_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -107,10 +113,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SFML_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -118,13 +124,17 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>lib\Debug\gtest.lib;lib\Debug\gtest_main.lib;_deps\box2d-build\bin\Debug\box2d.lib;_deps\sfml-build\lib\Debug\sfml-graphics-s-d.lib;_deps\sfml-build\lib\Debug\sfml-audio-s-d.lib;_deps\sfml-build\lib\Debug\sfml-network-s-d.lib;_deps\sfml-build\lib\Debug\sfml-system-s-d.lib;lib\Debug\gtest.lib;_deps\sfml-build\lib\Debug\sfml-window-s-d.lib;opengl32.lib;gdi32.lib;legacy_stdio_definitions.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\Debug\sfml-system-s-d.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Debug\gtest.lib;lib\Debug\gtest_main.lib;_deps\box2d-build\bin\Debug\box2d.lib;_deps\sfml-build\lib\Debug\sfml-graphics-s-d.lib;_deps\sfml-build\lib\Debug\sfml-audio-s-d.lib;_deps\sfml-build\lib\Debug\sfml-network-s-d.lib;_deps\sfml-build\lib\Debug\sfml-system-s-d.lib;lib\Debug\gtest.lib;_deps\sfml-build\lib\Debug\sfml-window-s-d.lib;opengl32.lib;gdi32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\Debug\sfml-system-s-d.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>H:/angry-birds-clone-assignment-Th0mas123456/Build/Debug/RunUnitTests.lib</ImportLibrary>
-      <ProgramDataBaseFile>H:/angry-birds-clone-assignment-Th0mas123456/Build/bin/Debug/RunUnitTests.pdb</ProgramDataBaseFile>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/Debug/RunUnitTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/bin/Debug/RunUnitTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -133,19 +143,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -155,10 +171,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -166,13 +182,17 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>lib\Release\gtest.lib;lib\Release\gtest_main.lib;_deps\box2d-build\bin\Release\box2d.lib;_deps\sfml-build\lib\Release\sfml-graphics-s.lib;_deps\sfml-build\lib\Release\sfml-audio-s.lib;_deps\sfml-build\lib\Release\sfml-network-s.lib;_deps\sfml-build\lib\Release\sfml-system-s.lib;lib\Release\gtest.lib;_deps\sfml-build\lib\Release\sfml-window-s.lib;opengl32.lib;gdi32.lib;legacy_stdio_definitions.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\Release\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Release\gtest.lib;lib\Release\gtest_main.lib;_deps\box2d-build\bin\Release\box2d.lib;_deps\sfml-build\lib\Release\sfml-graphics-s.lib;_deps\sfml-build\lib\Release\sfml-audio-s.lib;_deps\sfml-build\lib\Release\sfml-network-s.lib;_deps\sfml-build\lib\Release\sfml-system-s.lib;lib\Release\gtest.lib;_deps\sfml-build\lib\Release\sfml-window-s.lib;opengl32.lib;gdi32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\Release\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>H:/angry-birds-clone-assignment-Th0mas123456/Build/Release/RunUnitTests.lib</ImportLibrary>
-      <ProgramDataBaseFile>H:/angry-birds-clone-assignment-Th0mas123456/Build/bin/Release/RunUnitTests.pdb</ProgramDataBaseFile>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/Release/RunUnitTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/bin/Release/RunUnitTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -181,19 +201,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -203,10 +229,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -214,13 +240,17 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>lib\MinSizeRel\gtest.lib;lib\MinSizeRel\gtest_main.lib;_deps\box2d-build\bin\MinSizeRel\box2d.lib;_deps\sfml-build\lib\MinSizeRel\sfml-graphics-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-audio-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-network-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-system-s.lib;lib\MinSizeRel\gtest.lib;_deps\sfml-build\lib\MinSizeRel\sfml-window-s.lib;opengl32.lib;gdi32.lib;legacy_stdio_definitions.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\MinSizeRel\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\MinSizeRel\gtest.lib;lib\MinSizeRel\gtest_main.lib;_deps\box2d-build\bin\MinSizeRel\box2d.lib;_deps\sfml-build\lib\MinSizeRel\sfml-graphics-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-audio-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-network-s.lib;_deps\sfml-build\lib\MinSizeRel\sfml-system-s.lib;lib\MinSizeRel\gtest.lib;_deps\sfml-build\lib\MinSizeRel\sfml-window-s.lib;opengl32.lib;gdi32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\MinSizeRel\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>H:/angry-birds-clone-assignment-Th0mas123456/Build/MinSizeRel/RunUnitTests.lib</ImportLibrary>
-      <ProgramDataBaseFile>H:/angry-birds-clone-assignment-Th0mas123456/Build/bin/MinSizeRel/RunUnitTests.pdb</ProgramDataBaseFile>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/MinSizeRel/RunUnitTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/bin/MinSizeRel/RunUnitTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -229,20 +259,26 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "H:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest/include" /external:I "C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/googletest-src/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -250,10 +286,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>H:\angry-birds-clone-assignment-Th0mas123456\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-src\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -261,13 +297,17 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>lib\RelWithDebInfo\gtest.lib;lib\RelWithDebInfo\gtest_main.lib;_deps\box2d-build\bin\RelWithDebInfo\box2d.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-graphics-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-audio-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-network-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-system-s.lib;lib\RelWithDebInfo\gtest.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-window-s.lib;opengl32.lib;gdi32.lib;legacy_stdio_definitions.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\RelWithDebInfo\gtest.lib;lib\RelWithDebInfo\gtest_main.lib;_deps\box2d-build\bin\RelWithDebInfo\box2d.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-graphics-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-audio-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-network-s.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-system-s.lib;lib\RelWithDebInfo\gtest.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-window-s.lib;opengl32.lib;gdi32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\freetype.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\openal32.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisenc.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbisfile.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\vorbis.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\ogg.lib;_deps\sfml-src\extlibs\libs-msvc-universal\x64\flac.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-system-s.lib;winmm.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>H:/angry-birds-clone-assignment-Th0mas123456/Build/RelWithDebInfo/RunUnitTests.lib</ImportLibrary>
-      <ProgramDataBaseFile>H:/angry-birds-clone-assignment-Th0mas123456/Build/bin/RelWithDebInfo/RunUnitTests.pdb</ProgramDataBaseFile>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/RelWithDebInfo/RunUnitTests.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/bin/RelWithDebInfo/RunUnitTests.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -275,11 +315,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="H:\angry-birds-clone-assignment-Th0mas123456\CMakeLists.txt">
+    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -287,12 +327,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,12 +340,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -313,12 +353,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SH:/angry-birds-clone-assignment-Th0mas123456 -BH:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -326,53 +366,54 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\3.30.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-4.3\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\4.3.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="H:\angry-birds-clone-assignment-Th0mas123456\include\Enemy.h" />
-    <ClInclude Include="H:\angry-birds-clone-assignment-Th0mas123456\include\Slingshot.h" />
-    <ClCompile Include="H:\angry-birds-clone-assignment-Th0mas123456\test_src\RunTests.cpp" />
+    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\Enemy.h" />
+    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\Slingshot.h" />
+    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\test_src\RunTests.cpp" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
-      <Project>{198C8CA7-421A-3B3A-B038-29243F8457A6}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
+      <Project>{ABAE107D-90F1-3C15-992B-3BC4BF5A317F}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
-      <Project>{04EAB4D4-1781-3767-BC5E-1B6BB497F3D6}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
+      <Project>{AACA47C9-81FF-3962-8D7F-67588F733D8B}</Project>
       <Name>box2d</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-build\googletest\gtest.vcxproj">
-      <Project>{BA33345B-A3AA-367E-8BE4-7668E4158E37}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{F50D10D2-FB59-3049-AC16-CFF9DB786E76}</Project>
       <Name>gtest</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-build\googletest\gtest_main.vcxproj">
-      <Project>{21C48106-FD86-39CC-A2EC-4202AAE8FBC2}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{F5A4FF04-A791-3248-A087-40242847A91A}</Project>
       <Name>gtest_main</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Audio\sfml-audio.vcxproj">
-      <Project>{59F30139-8178-3FA8-898A-CF25688100B8}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{00932B17-62C9-30D6-8808-7D0326B16F64}</Project>
       <Name>sfml-audio</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{A9A2F7D8-22DA-3493-9880-57F72ACA68D1}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{925F34E4-54F2-383A-85C0-E9552F16132D}</Project>
       <Name>sfml-graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Network\sfml-network.vcxproj">
-      <Project>{AC918682-9D89-3724-9452-3AA5A5360EF6}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{FFEF8BD1-8520-3542-AD72-A11CDEDC8BA5}</Project>
       <Name>sfml-network</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{E1F1A808-69EE-33C9-89CC-A9E89E3A4483}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{6786C703-9B71-3026-B051-26928E25FBF5}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="H:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{7C117321-532B-3BD6-BC8A-3FD95F3CCE97}</Project>
+    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{6EC556E6-88EE-3426-911C-3BAC7367EDD8}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>
