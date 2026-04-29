@@ -1,15 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
-#include "Bird.h"
+#include "Pig.h"
 
 int main() {
 
-    DynamicObject* dyBird;
-    Bird bird;
-    dyBird = &bird;
-    std::cout << std::to_string(bird.upCast());
-    std::cout << std::to_string(dyBird->upCast());
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
@@ -20,6 +15,8 @@ int main() {
     //Can set a definition for PI.
     const float PI = 3.1415927;
 
+    Pig pig("../assets/Ang_Birds/Pigs.png");
+    Pig pig2("../assets/Ang_Birds/Pigs.png", sf::IntRect(35, 525, 145, 160), 20.f);
     //setup world.
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
@@ -140,6 +137,8 @@ int main() {
         window.draw(sf_wallVisual);
         window.draw(sf_plankVisual);
         window.draw(sf_ballVisual);
+        //pig.Render(window);
+        pig2.Render(window);
 
         window.display();
     }

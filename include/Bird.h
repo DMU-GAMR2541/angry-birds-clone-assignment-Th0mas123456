@@ -5,8 +5,5 @@ public:
 	Bird() = default;
 	~Bird() = default;
 
-	int upCast() override {
-		return 1;
-	}
 };
 
