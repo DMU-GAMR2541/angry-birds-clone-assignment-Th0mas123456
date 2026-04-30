@@ -6,8 +6,8 @@ private:
 public:
 
 	Pig() = default;
-	Pig(std::string spritefl) : DynamicObject(spritefl) {};
-	Pig(std::string spritefl, sf::IntRect spriteCut, float health) : DynamicObject(spritefl, spriteCut) { 
+	Pig(std::string spriteLoc) : DynamicObject(spriteLoc) {};
+	Pig(std::string spriteLoc, sf::IntRect spriteCut, float health) : DynamicObject(spriteLoc, spriteCut) { 
 		pigHealth = health;
 	};
 	~Pig() = default;
