@@ -2,6 +2,7 @@
 #include <box2d/box2d.h>
 #include <iostream>
 #include "Pig.h"
+#include "Bird.h"
 
 int main() {
 
@@ -15,11 +16,11 @@ int main() {
     //Can set a definition for PI.
     const float PI = 3.1415927;
 
-    Pig pig("../assets/Ang_Birds/Pigs.png");
-    Pig pig2("../assets/Ang_Birds/Pigs.png", sf::IntRect(35, 525, 145, 160), 20.f);
     //setup world.
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
+    Pig pig(world, b2Vec2(102.f/SCALE, 100.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    Bird bird(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45));
 
     //Setup ground for the circle to move / bounce on.
     //Needs to have a body definition and a body. We use a raw pointer for the b2Body as Box2d does the management itself.
@@ -111,6 +112,9 @@ int main() {
 
                     std::cout << "Firing!!!!" << std::endl;
                 }
+                else if (event.key.code == sf::Keyboard::A) {
+                    pig.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
+                }
             }
         }
 
@@ -137,8 +141,11 @@ int main() {
         window.draw(sf_wallVisual);
         window.draw(sf_plankVisual);
         window.draw(sf_ballVisual);
-        //pig.Render(window);
-        pig2.Render(window);
+
+        pig.Render(window);
+        bird.Render(window);
+        pig.Update();
+        bird.Update();
 
         window.display();
     }
