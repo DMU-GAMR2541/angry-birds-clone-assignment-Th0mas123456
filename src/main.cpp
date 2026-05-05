@@ -115,6 +115,12 @@ int main() {
                 else if (event.key.code == sf::Keyboard::A) {
                     pig.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
                 }
+
+            }
+            else if (event.type == sf::Event::MouseButtonPressed) {
+                if (event.mouseButton.button == sf::Mouse::Left) {
+                    bird.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
+                }
             }
         }
 
