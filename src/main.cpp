@@ -4,6 +4,8 @@
 #include "Pig.h"
 #include "Bird.h"
 #include <list>
+#include <vector>
+#include "NonInteractable.h"
 
 int main() {
 
@@ -20,13 +22,20 @@ int main() {
     //setup world.
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
-    Pig pig(world, b2Vec2(102.f/SCALE, 100.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
-    Bird bird(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
-    std::shared_ptr<Bird> redBird = std::make_shared<Bird>(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
-    std::shared_ptr<Bird> yellowBird = std::make_shared<Bird>(world, b2Vec2(100.f, 100.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
+    //Pig pig(world, b2Vec2(102.f/SCALE, 100.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
 
-    std::list<Bird> birds = { redBird, yellowBird };
+    std::list<std::shared_ptr<DynamicObject>> gameObjects;
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(100.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(150.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(200.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
+    gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(250.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
+    gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(300.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
+    gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(350.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
+    bool birdFired = false;
 
+    std::vector<std::shared_ptr<NonInteractable>> walls;
+    walls.push_back(std::make_shared<NonInteractable>(sf::Vector2f(20.f, 100.f), sf::Vector2f(100.f, 100.f), sf::Color(0,0,255)));
+    //walls.push_back(std::make_shared<NonInteractable>());
     //Setup ground for the circle to move / bounce on.
     //Needs to have a body definition and a body. We use a raw pointer for the b2Body as Box2d does the management itself.
     //A body can be defined as having a position, velocity, and mass. 
@@ -78,24 +87,24 @@ int main() {
     sf_plankVisual.setOrigin(10.0f, 60.0f);
     sf_plankVisual.setFillColor(sf::Color(139, 69, 19)); // Brown
 
-    //Create a ball that is fired when space is pressed. We need to first have a dynamic ball to do it.
-    b2BodyDef b2_ballDef;
-    b2_ballDef.type = b2_dynamicBody;
-    b2_ballDef.position.Set(100.0f / SCALE, 500.0f / SCALE);
-    b2Body* b2_ballBody = world.CreateBody(&b2_ballDef);
+    ////Create a ball that is fired when space is pressed. We need to first have a dynamic ball to do it.
+    //b2BodyDef b2_ballDef;
+    //b2_ballDef.type = b2_dynamicBody;
+    //b2_ballDef.position.Set(100.0f / SCALE, 500.0f / SCALE);
+    //b2Body* b2_ballBody = world.CreateBody(&b2_ballDef);
 
-    b2CircleShape b2_circleShape;
-    b2_circleShape.m_radius = 15.0f / SCALE;
+    //b2CircleShape b2_circleShape;
+    //b2_circleShape.m_radius = 15.0f / SCALE;
 
-    b2FixtureDef b2_ballFixture;
-    b2_ballFixture.shape = &b2_circleShape;
-    b2_ballFixture.density = 1.0f;
-    b2_ballFixture.restitution = 0.5f; // Bounciness
-    b2_ballBody->CreateFixture(&b2_ballFixture);
+    //b2FixtureDef b2_ballFixture;
+    //b2_ballFixture.shape = &b2_circleShape;
+    //b2_ballFixture.density = 1.0f;
+    //b2_ballFixture.restitution = 0.5f; // Bounciness
+    //b2_ballBody->CreateFixture(&b2_ballFixture);
 
-    sf::CircleShape sf_ballVisual(15.0f);
-    sf_ballVisual.setOrigin(15.0f, 15.0f);
-    sf_ballVisual.setFillColor(sf::Color::Yellow);
+    //sf::CircleShape sf_ballVisual(15.0f);
+    //sf_ballVisual.setOrigin(15.0f, 15.0f);
+    //sf_ballVisual.setFillColor(sf::Color::Yellow);
 
     // --- 7. MAIN LOOP ---
     while (window.isOpen()) {
@@ -105,26 +114,29 @@ int main() {
                 window.close();
 
             // INPUT HANDLING: Press SPACE to launch
-            if (event.type == sf::Event::KeyPressed) {
-                if (event.key.code == sf::Keyboard::Space) {
-                    // Reset position of the ball so that it can be fired again from its original poisition.
-                    b2_ballBody->SetTransform(b2Vec2(100.0f / SCALE, 500.0f / SCALE), 0);
-                    b2_ballBody->SetLinearVelocity(b2Vec2(0, 0));
-                    b2_ballBody->SetAngularVelocity(0);
+            //if (event.type == sf::Event::KeyPressed) {
+            //    if (event.key.code == sf::Keyboard::Space) {
+            //        // Reset position of the ball so that it can be fired again from its original poisition.
+            //        b2_ballBody->SetTransform(b2Vec2(100.0f / SCALE, 500.0f / SCALE), 0);
+            //        b2_ballBody->SetLinearVelocity(b2Vec2(0, 0));
+            //        b2_ballBody->SetAngularVelocity(0);
 
-                    // Apply impulse (X-axis, Y-axis) Negative Y is UP in Box2D because gravity is positive.
-                    b2_ballBody->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
+            //        // Apply impulse (X-axis, Y-axis) Negative Y is UP in Box2D because gravity is positive.
+            //        b2_ballBody->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
 
-                    std::cout << "Firing!!!!" << std::endl;
-                }
-                else if (event.key.code == sf::Keyboard::A) {
-                    pig.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
-                }
+            //        std::cout << "Firing!!!!" << std::endl;
+            //    }
+            //    else if (event.key.code == sf::Keyboard::A) {
+            //        pig.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
+            //    }
 
-            }
-            else if (event.type == sf::Event::MouseButtonPressed) {
-                if (event.mouseButton.button == sf::Mouse::Left) {
-                    bird.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
+            //}
+            if (event.type == sf::Event::MouseButtonPressed) {
+                if (event.mouseButton.button == sf::Mouse::Left && !gameObjects.empty()) {
+                    if (auto bird = std::dynamic_pointer_cast<Bird>(gameObjects.front())) {
+                        bird->getBody()->ApplyLinearImpulse(b2Vec2(10.f, -10.f),bird->getBody()->GetWorldCenter(),true);
+                        birdFired = true;
+                    }
                 }
             }
         }
@@ -132,10 +144,20 @@ int main() {
         // Update Physics
         world.Step(1.0f / 60.0f, 8, 3);
 
+
+        if (birdFired && !gameObjects.empty()) {
+            if (auto bird = std::dynamic_pointer_cast<Bird>(gameObjects.front())) {
+                b2Vec2 velocity = bird->getBody()->GetLinearVelocity();
+                if (velocity.Length() < 0.1f) {
+                    gameObjects.pop_front();
+                    birdFired = false;
+                }
+            }
+        }
         //All of the visuals needs to be synced with the physics.
 
-        sf_ballVisual.setPosition(b2_ballBody->GetPosition().x * SCALE, b2_ballBody->GetPosition().y * SCALE);
-        sf_ballVisual.setRotation(b2_ballBody->GetAngle() * (180.0f / PI));
+        /*sf_ballVisual.setPosition(b2_ballBody->GetPosition().x * SCALE, b2_ballBody->GetPosition().y * SCALE);
+        sf_ballVisual.setRotation(b2_ballBody->GetAngle() * (180.0f / PI));*/
 
         //Static objects usually don't move, but we set the position once.
         sf_groundVisual.setPosition(b2_groundBody->GetPosition().x * SCALE, b2_groundBody->GetPosition().y * SCALE);
@@ -151,12 +173,17 @@ int main() {
         window.draw(sf_groundVisual);
         window.draw(sf_wallVisual);
         window.draw(sf_plankVisual);
-        window.draw(sf_ballVisual);
+        //window.draw(sf_ballVisual);
 
-        pig.Render(window);
-        bird.Render(window);
-        pig.Update();
-        bird.Update();
+        for (auto& it : gameObjects) {
+            it->Update();
+        }
+        for (auto& it : gameObjects) {
+            it->Render(window);
+        }
+        for (auto& it : walls) {
+            it->Render(window);
+        }
 
         window.display();
     }

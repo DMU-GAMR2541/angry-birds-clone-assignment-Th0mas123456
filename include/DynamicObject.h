@@ -12,6 +12,7 @@ private:
 	b2CircleShape b2_dynamicCircle;
 
 	float SCALE = 30.0f;
+	const float PI = 3.1415927;
 public:
 
 	DynamicObject() = default;

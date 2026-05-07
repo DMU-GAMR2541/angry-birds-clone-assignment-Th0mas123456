@@ -25,7 +25,6 @@ DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spri
 	b2_bodyDef.type = b2_dynamicBody;
 	b2_bodyDef.position = b2_posIn;
 
-	//Create the body in the world.
 	b2_body = b2_world.CreateBody(&b2_bodyDef);
 
 
@@ -49,4 +48,5 @@ void DynamicObject::Update()
 {
 	b2Vec2 pos = b2_body->GetPosition();
 	sp_sprite.setPosition(pos.x * SCALE, pos.y * SCALE);
+	sp_sprite.setRotation(b2_body->GetAngle() * (180.f / PI));
 }
