@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Pig.h"
 #include "Bird.h"
+#include <list>
 
 int main() {
 
@@ -20,7 +21,11 @@ int main() {
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
     Pig pig(world, b2Vec2(102.f/SCALE, 100.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
-    Bird bird(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45));
+    Bird bird(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
+    std::shared_ptr<Bird> redBird = std::make_shared<Bird>(world, b2Vec2(0.f, 0.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
+    std::shared_ptr<Bird> yellowBird = std::make_shared<Bird>(world, b2Vec2(100.f, 100.f), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f);
+
+    std::list<Bird> birds = { redBird, yellowBird };
 
     //Setup ground for the circle to move / bounce on.
     //Needs to have a body definition and a body. We use a raw pointer for the b2Body as Box2d does the management itself.
