@@ -22,20 +22,27 @@ int main() {
     //setup world.
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
-    //Pig pig(world, b2Vec2(102.f/SCALE, 100.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
 
+    //sets all the game objects into a list container
     std::list<std::shared_ptr<DynamicObject>> gameObjects;
-    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(100.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
-    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(150.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
-    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(200.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f));
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(100.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 20.f));
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(150.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(667, 878, 61, 55), 50.f, 40.f));
+    gameObjects.push_back(std::make_shared<Bird>(world, b2Vec2(200.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(408, 724, 64, 82), 50.f, 10.f));
     gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(250.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
     gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(300.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
     gameObjects.push_back(std::make_shared<Pig>(world, b2Vec2(350.f / SCALE, 500.f / SCALE), "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f));
+    
+    //variable used later on so only one bird can be fired at once
     bool birdFired = false;
 
+    //sets a vector container of noninteractable objects
     std::vector<std::shared_ptr<NonInteractable>> walls;
-    walls.push_back(std::make_shared<NonInteractable>(sf::Vector2f(20.f, 100.f), sf::Vector2f(100.f, 100.f), sf::Color(0,0,255)));
-    //walls.push_back(std::make_shared<NonInteractable>());
+    walls.push_back(std::make_shared<NonInteractable>("../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), sf::Vector2f(100.f,100.f)));
+  
+
+
+
+
     //Setup ground for the circle to move / bounce on.
     //Needs to have a body definition and a body. We use a raw pointer for the b2Body as Box2d does the management itself.
     //A body can be defined as having a position, velocity, and mass. 
@@ -131,11 +138,13 @@ int main() {
             //    }
 
             //}
+            //Input handling of the bird being launched
             if (event.type == sf::Event::MouseButtonPressed) {
                 if (event.mouseButton.button == sf::Mouse::Left && !gameObjects.empty()) {
+                    //checks that the object being launched is a bird before launching
                     if (auto bird = std::dynamic_pointer_cast<Bird>(gameObjects.front())) {
-                        bird->getBody()->ApplyLinearImpulse(b2Vec2(10.f, -10.f),bird->getBody()->GetWorldCenter(),true);
-                        birdFired = true;
+                        bird->getBody()->ApplyLinearImpulse(b2Vec2(bird->getSpeed(), -bird->getSpeed()), bird->getBody()->GetWorldCenter(), true); //performs the launch
+                        birdFired = true; //sets fired to be true so that the check for the bird being destroyed can use it
                     }
                 }
             }
@@ -144,11 +153,11 @@ int main() {
         // Update Physics
         world.Step(1.0f / 60.0f, 8, 3);
 
-
+        //removes the bird from the list container if it has stopped moving
         if (birdFired && !gameObjects.empty()) {
             if (auto bird = std::dynamic_pointer_cast<Bird>(gameObjects.front())) {
                 b2Vec2 velocity = bird->getBody()->GetLinearVelocity();
-                if (velocity.Length() < 0.1f) {
+                if (velocity.Length() < 0.1f || bird->getBody()->GetPosition().x*SCALE > window.getSize().x) {
                     gameObjects.pop_front();
                     birdFired = false;
                 }
@@ -175,12 +184,15 @@ int main() {
         window.draw(sf_plankVisual);
         //window.draw(sf_ballVisual);
 
+        //loop that handles the updating of the game objects
         for (auto& it : gameObjects) {
             it->Update();
         }
+        //loop that renders all of the game objects
         for (auto& it : gameObjects) {
             it->Render(window);
         }
+        //loop that renders all the noninteractables
         for (auto& it : walls) {
             it->Render(window);
         }

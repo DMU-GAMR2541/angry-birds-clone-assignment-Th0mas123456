@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\src\gl.c">
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\src\gl.c">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include\glad\gl.h">
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include\glad\gl.h">
       <Filter>include\glad</Filter>
     </ClInclude>
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h">
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h">
       <Filter>include\KHR</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\CMakeLists.txt" />
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{F3BC0209-EE88-3EDD-BC1C-48F46AABF692}</UniqueIdentifier>
+      <UniqueIdentifier>{56016E72-BDA5-3E04-8BC9-6BA9E2EE70C1}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\KHR">
-      <UniqueIdentifier>{E3D749CF-EDE1-30DA-8FA7-CA53B04396AF}</UniqueIdentifier>
+      <UniqueIdentifier>{A57D9D07-302B-39C8-A737-6ABED3829760}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\glad">
-      <UniqueIdentifier>{AAD02B31-F3C1-3BC1-BCE4-5CAD44E2D159}</UniqueIdentifier>
+      <UniqueIdentifier>{EAADAF4F-A670-3F32-8A3D-04DB0E0D2A1E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{AFCD5F40-E315-35C5-AD7E-17EF1CD85C01}</UniqueIdentifier>
+      <UniqueIdentifier>{317A2A05-842F-310A-A0B8-75D3CF3B58CB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

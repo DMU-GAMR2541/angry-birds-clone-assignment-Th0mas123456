@@ -14,7 +14,6 @@ private:
 	float SCALE = 30.0f;
 	const float PI = 3.1415927;
 public:
-
 	DynamicObject() = default;
 	DynamicObject(std::string spriteLoc);
 	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spriteLoc, sf::IntRect spriteCut);

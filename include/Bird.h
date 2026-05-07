@@ -12,5 +12,6 @@ public:
 		birdMass = mass;
 	};
 	~Bird() = default;
+	float getSpeed() { return birdSpeed; };
 };
 

@@ -4,7 +4,7 @@ class NonInteractable : public StaticObject{
 public:
 
 	NonInteractable() = default;
-	NonInteractable(sf::Vector2f size, sf::Vector2f position, sf::Color color) : StaticObject(size, position, color) {};
+	NonInteractable(std::string spriteLoc, sf::IntRect spriteCut, sf::Vector2f position) : StaticObject(spriteLoc, spriteCut, position) {};
 	~NonInteractable() = default;
 };
 
