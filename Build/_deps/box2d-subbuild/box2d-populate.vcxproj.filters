@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-mkdir.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-mkdir.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-download.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-download.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-update.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-update.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-patch.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-patch.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-configure.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-configure.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-build.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-build.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-install.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-install.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\7f0559712fbcf9077b2ac73c0c7da221\box2d-populate-test.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\3ede47482d2bdd6fa80c38d1795f65e3\box2d-populate-test.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\4fbb435db708e729604c6ed27f67318b\box2d-populate-complete.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\d6650948a39b388f2faa506cb381bd42\box2d-populate-complete.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\90aa86b5985c9d1c0cce908abc44b8fb\box2d-populate.rule">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\ee64d5e3a53c4d6dca5122b1e17de05e\box2d-populate.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeLists.txt" />
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\box2d-populate" />
+    <None Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-subbuild\CMakeFiles\box2d-populate" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{4C85D55A-2609-3DBD-9C87-AFA93FD03F59}</UniqueIdentifier>
+      <UniqueIdentifier>{EEDA494C-E929-3A86-AA1A-4CE0D646FBEA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

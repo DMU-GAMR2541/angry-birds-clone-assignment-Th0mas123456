@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9E8D89F8-B1AE-373D-8606-AEAE88FF96D4}</ProjectGuid>
+    <ProjectGuid>{C511F027-A11E-3BA7-B58A-13F1D859E93E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,54 +59,48 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">testbed.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">testbed</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\Release\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">testbed.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">testbed</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\MinSizeRel\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">testbed.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">testbed</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\RelWithDebInfo\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">testbed.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">testbed</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/testbed</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -114,10 +108,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -127,7 +121,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -140,14 +134,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>..\bin\Debug\box2d.lib;..\bin\Debug\glfw.lib;..\bin\Debug\imgui.lib;..\bin\Debug\sajson.lib;..\bin\Debug\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Debug/testbed.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Debug/testbed.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <ImportLibrary>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Debug/testbed.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Debug/testbed.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -156,22 +146,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -181,10 +165,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -194,7 +178,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -207,14 +191,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>..\bin\Release\box2d.lib;..\bin\Release\glfw.lib;..\bin\Release\imgui.lib;..\bin\Release\sajson.lib;..\bin\Release\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Release/testbed.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Release/testbed.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <ImportLibrary>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Release/testbed.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/Release/testbed.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -223,22 +203,16 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -248,10 +222,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -261,7 +235,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,14 +248,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>..\bin\MinSizeRel\box2d.lib;..\bin\MinSizeRel\glfw.lib;..\bin\MinSizeRel\imgui.lib;..\bin\MinSizeRel\sajson.lib;..\bin\MinSizeRel\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/MinSizeRel/testbed.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/MinSizeRel/testbed.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <ImportLibrary>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/MinSizeRel/testbed.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/MinSizeRel/testbed.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -290,23 +260,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -314,10 +278,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\src\..\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glfw\include;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\imgui\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\sajson\..;H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -327,7 +291,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/data/ H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/data/
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -340,14 +304,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>..\bin\RelWithDebInfo\box2d.lib;..\bin\RelWithDebInfo\glfw.lib;..\bin\RelWithDebInfo\imgui.lib;..\bin\RelWithDebInfo\sajson.lib;..\bin\RelWithDebInfo\glad.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/RelWithDebInfo/testbed.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/RelWithDebInfo/testbed.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <ImportLibrary>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/RelWithDebInfo/testbed.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/bin/RelWithDebInfo/testbed.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -355,11 +315,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\CMakeLists.txt">
+    <CustomBuild Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456 -BH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -368,11 +328,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456 -BH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -381,11 +341,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456 -BH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -394,11 +354,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-src/testbed/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/angry-birds-clone-assignment-Th0mas123456 -BC:/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file C:/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456 -BH:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build --check-stamp-file H:/Documents/GitHub/angry-birds-clone-assignment-Th0mas123456/Build/_deps/box2d-build/testbed/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -407,107 +367,106 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\testbed\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\draw.cpp" />
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\draw.h" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_glfw.cpp" />
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_glfw.h" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_opengl3.cpp" />
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_opengl3.h" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\main.cpp" />
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\settings.h" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\settings.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\test.cpp" />
-    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\test.h" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\add_pair.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\apply_force.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\body_types.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\box_stack.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\breakable.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\bridge.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\bullet_test.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\cantilever.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\car.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\chain.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\chain_problem.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\character_collision.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\circle_stack.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\collision_filtering.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\collision_processing.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\compound_shapes.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\confined.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\continuous_test.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\convex_hull.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\conveyor_belt.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\distance_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\distance_test.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dominos.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dump_loader.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dynamic_tree.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\edge_shapes.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\edge_test.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\friction.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\gear_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\heavy1.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\heavy2.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\mobile_balanced.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\mobile_unbalanced.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\motor_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pinball.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\platformer.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\polygon_collision.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\polygon_shapes.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\prismatic_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pulley_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pyramid.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\ray_cast.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\restitution.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\revolute_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\rope.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\sensor.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\shape_cast.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\shape_editing.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\skier.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\slider_crank_1.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\slider_crank_2.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\theo_jansen.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\tiles.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\time_of_impact.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\tumbler.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\web.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\wheel_joint.cpp" />
-    <ClCompile Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\wrecking_ball.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\draw.cpp" />
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\draw.h" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_glfw.cpp" />
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_glfw.h" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_opengl3.cpp" />
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\imgui_impl_opengl3.h" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\main.cpp" />
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\settings.h" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\settings.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\test.cpp" />
+    <ClInclude Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\test.h" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\add_pair.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\apply_force.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\body_types.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\box_stack.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\breakable.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\bridge.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\bullet_test.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\cantilever.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\car.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\chain.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\chain_problem.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\character_collision.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\circle_stack.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\collision_filtering.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\collision_processing.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\compound_shapes.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\confined.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\continuous_test.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\convex_hull.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\conveyor_belt.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\distance_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\distance_test.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dominos.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dump_loader.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\dynamic_tree.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\edge_shapes.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\edge_test.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\friction.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\gear_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\heavy1.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\heavy2.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\mobile_balanced.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\mobile_unbalanced.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\motor_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pinball.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\platformer.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\polygon_collision.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\polygon_shapes.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\prismatic_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pulley_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\pyramid.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\ray_cast.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\restitution.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\revolute_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\rope.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\sensor.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\shape_cast.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\shape_editing.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\skier.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\slider_crank_1.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\slider_crank_2.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\theo_jansen.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\tiles.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\time_of_impact.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\tumbler.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\web.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\wheel_joint.cpp" />
+    <ClCompile Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-src\testbed\tests\wrecking_ball.cpp" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
-      <Project>{ABAE107D-90F1-3C15-992B-3BC4BF5A317F}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\ZERO_CHECK.vcxproj">
+      <Project>{593A1B4F-04D6-38D6-B388-04EDC1CD78BB}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
-      <Project>{AACA47C9-81FF-3962-8D7F-67588F733D8B}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\src\box2d.vcxproj">
+      <Project>{FB8882A1-375A-3892-AADA-CF2002F4D860}</Project>
       <Name>box2d</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
-      <Project>{B5E26584-6BC4-39BD-8B67-8622C2C0C02D}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glad\glad.vcxproj">
+      <Project>{66A70E4A-9B23-33A0-9DE5-9EF6C41CF278}</Project>
       <Name>glad</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
-      <Project>{E0D16BB7-2E9A-3320-BEBB-C9F6311611CB}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\glfw\glfw.vcxproj">
+      <Project>{AF099F2D-781F-31D2-897F-5614C002CF8C}</Project>
       <Name>glfw</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
-      <Project>{F023332A-062B-3843-A152-113089A349F0}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\imgui\imgui.vcxproj">
+      <Project>{08458B12-B12D-3E5E-85BC-F309B63AB7C2}</Project>
       <Name>imgui</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
-      <Project>{C0425024-F43A-3EE0-9191-BE537699CC63}</Project>
+    <ProjectReference Include="H:\Documents\GitHub\angry-birds-clone-assignment-Th0mas123456\Build\_deps\box2d-build\extern\sajson\sajson.vcxproj">
+      <Project>{674F612E-80DA-3B6E-A9BB-875A0F2D2414}</Project>
       <Name>sajson</Name>
     </ProjectReference>
   </ItemGroup>

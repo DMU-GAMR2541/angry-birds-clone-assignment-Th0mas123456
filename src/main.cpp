@@ -6,6 +6,7 @@
 #include <list>
 #include <vector>
 #include "NonInteractable.h"
+#include "UI.h"
 
 int main() {
 
@@ -50,6 +51,7 @@ int main() {
     pigCountText.setFillColor(sf::Color::White);
     pigCountText.setPosition(10.f, 10.f);
 
+    UI pigCount("../assets/fonts/angry-birds.ttf", sf::Vector2f(120.f,40.f), 24, "pigs: ");
 
 
     //Setup ground for the circle to move / bounce on.
@@ -186,6 +188,8 @@ int main() {
                 }
             }
         }
+
+        pigCount.Render(window);
         //All of the visuals needs to be synced with the physics.
 
         /*sf_ballVisual.setPosition(b2_ballBody->GetPosition().x * SCALE, b2_ballBody->GetPosition().y * SCALE);
@@ -224,7 +228,7 @@ int main() {
         pigCountText.setString("Pigs: " + std::to_string(pigCount));
 
 
-        window.draw(pigCountText);
+        //window.draw(pigCountText);
 
         window.display();
     }
