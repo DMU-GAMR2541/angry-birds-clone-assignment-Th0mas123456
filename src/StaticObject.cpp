@@ -16,9 +16,10 @@ StaticObject::StaticObject(sf::Vector2f size, sf::Vector2f position, sf::Color c
 {
 }
 
+
 void StaticObject::Render(sf::RenderWindow& window)
 {
-    window.draw(sp_sprite);
+	window.draw(sp_sprite); 
 }
 
 void StaticObject::Update()

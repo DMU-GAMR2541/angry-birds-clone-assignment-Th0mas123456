@@ -13,4 +13,5 @@ public:
 	UI(std::string sf_font, sf::Vector2f pos, int size, std::string display);
 	void Render(sf::RenderWindow& window) override;
 	void Update() override;
+	void setText(std::string newText);
 };

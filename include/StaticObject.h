@@ -1,10 +1,11 @@
 #pragma once
 #include "GameObject.h"
 
-class StaticObject : public GameObject {
-private:
+class StaticObject : public virtual GameObject {
+protected:
     sf::Sprite sp_sprite;
     sf::Texture sf_texture;
+    float SCALE = 30.0f;
 public:
     StaticObject() = default;
     StaticObject(std::string spriteLoc, sf::IntRect spriteCut, sf::Vector2f position);

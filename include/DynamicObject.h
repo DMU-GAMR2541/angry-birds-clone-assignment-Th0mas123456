@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.h"
-class DynamicObject : public GameObject{
-private:
+class DynamicObject : public virtual GameObject{
+protected:
 	sf::Sprite sp_sprite;
 	sf::Texture sf_texture;
 	b2Vec2 b2_position;
@@ -10,6 +10,7 @@ private:
 
 	b2Body* b2_body;
 	b2CircleShape b2_dynamicCircle;
+	sf::RectangleShape sf_shape;
 
 	float SCALE = 30.0f;
 	const float PI = 3.1415927;
@@ -17,6 +18,7 @@ public:
 	DynamicObject() = default;
 	DynamicObject(std::string spriteLoc);
 	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spriteLoc, sf::IntRect spriteCut);
+	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour);
 	virtual ~DynamicObject() = default;
 	void Render(sf::RenderWindow& window) override;
 	void Update();

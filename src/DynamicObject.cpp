@@ -39,14 +39,47 @@ DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spri
 	b2_body->CreateFixture(&b2_fixtureDef);
 }
 
+DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour)
+{
+
+	sf_shape.setSize(size);
+	sf_shape.setOrigin(size.x / 2.0f, size.y / 2.0f);
+	sf_shape.setFillColor(colour);
+
+
+	b2_bodyDef.type = b2_dynamicBody;
+	b2_bodyDef.position = b2_posIn;
+	b2_body = b2_world.CreateBody(&b2_bodyDef);
+
+
+	b2PolygonShape b2_box;
+	b2_box.SetAsBox((size.x / 2.0f) / SCALE, (size.y / 2.0f) / SCALE);
+
+	b2_fixtureDef.shape = &b2_box;
+	b2_fixtureDef.density = 1.0f;
+	b2_fixtureDef.friction = 0.3f;
+	b2_fixtureDef.restitution = 0.3f;
+	b2_body->CreateFixture(&b2_fixtureDef);
+}
+
 void DynamicObject::Render(sf::RenderWindow& window)
 {
-	window.draw(sp_sprite);
+	if (sf_texture.getSize().x > 0)
+		window.draw(sp_sprite); 
+	else
+		window.draw(sf_shape);  
 }
 
 void DynamicObject::Update()
 {
 	b2Vec2 pos = b2_body->GetPosition();
-	sp_sprite.setPosition(pos.x * SCALE, pos.y * SCALE);
-	sp_sprite.setRotation(b2_body->GetAngle() * (180.f / PI));
+	float angle = b2_body->GetAngle() * (180.f / PI);
+	if (sf_texture.getSize().x > 0) {
+		sp_sprite.setPosition(pos.x * SCALE, pos.y * SCALE);
+		sp_sprite.setRotation(angle);
+	}
+	else {
+		sf_shape.setPosition(pos.x * SCALE, pos.y * SCALE);
+		sf_shape.setRotation(angle);
+	}
 }

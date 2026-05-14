@@ -18,5 +18,11 @@ void UI::Render(sf::RenderWindow& window)
 }
 
 void UI::Update()
+{}
+
+void UI::setText(std::string newText)
 {
+	text.setString(newText);
 }
+
+
