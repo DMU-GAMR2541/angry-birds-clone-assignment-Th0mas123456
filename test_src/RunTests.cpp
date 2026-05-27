@@ -126,6 +126,22 @@ protected:
 };
 
 
+//test for a successful sprite loading
+TEST_F(GameObjectTest, Texture_LoadsSuccessfully) {
+    sf::Texture texture;
+    bool loaded = texture.loadFromFile("../assets/Ang_Birds/Pigs.png",
+        sf::IntRect(51, 66, 51, 51));
+    EXPECT_TRUE(loaded);
+}
+
+
+//test for a sprite failing to load
+TEST_F(GameObjectTest, Texture_FailsWithInvalidPath) {
+    sf::Texture texture;
+    bool loaded = texture.loadFromFile("failed.png");
+    EXPECT_FALSE(loaded);
+}
+
 
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);
