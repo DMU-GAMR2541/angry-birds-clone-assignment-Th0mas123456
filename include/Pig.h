@@ -13,5 +13,6 @@ public:
 	~Pig() = default;
 	void takeDamage(float damage) { pigHealth -= damage; };
 	bool isDead() { return pigHealth <= 0; }
+	float getHealth() { return pigHealth; };
 };
 
