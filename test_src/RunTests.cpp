@@ -172,6 +172,50 @@ TEST_F(GameObjectTest, Pig_NotDead_WithFullHealth) {
 }
 
 
+//tests if the birds movement is correct as low speeds
+TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_LowSpeed) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 5.f, 5.f);
+
+    bird.getBody()->ApplyLinearImpulse(b2Vec2(5.f, 0.f), bird.getBody()->GetWorldCenter(), true);
+    world->Step(1.f / 60.f, 8, 3);
+
+    EXPECT_GT(bird.getBody()->GetPosition().x, 100.f / SCALE);
+}
+
+//tests if the birds movement is correct at medium speeds
+TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_MediumSpeed) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 15.f, 15.f);
+
+    bird.getBody()->ApplyLinearImpulse(b2Vec2(15.f, 0.f), bird.getBody()->GetWorldCenter(), true);
+    world->Step(1.f / 60.f, 8, 3);
+
+    EXPECT_GT(bird.getBody()->GetPosition().x, 100.f / SCALE);
+}
+
+//tests if the birds movement is correct at high speeds
+TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_HighSpeed) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 50.f, 50.f);
+
+    bird.getBody()->ApplyLinearImpulse(b2Vec2(50.f, 0.f), bird.getBody()->GetWorldCenter(), true);
+    world->Step(1.f / 60.f, 8, 3);
+
+    EXPECT_GT(bird.getBody()->GetPosition().x, 100.f / SCALE);
+}
+
+//tests if gravity works correctly on the bird
+TEST_F(GameObjectTest, DynamicObject_FallsWithGravity) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 100.f / SCALE),
+        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
+
+    float initialY = bird.getBody()->GetPosition().y;
+    world->Step(1.f / 60.f, 8, 3);
+
+    EXPECT_GT(bird.getBody()->GetPosition().y, initialY);
+}
+
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
