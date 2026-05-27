@@ -143,6 +143,35 @@ TEST_F(GameObjectTest, Texture_FailsWithInvalidPath) {
 }
 
 
+//test that the pig shouldn't die if it doesnt take enough damage
+TEST_F(GameObjectTest, Pig_TakesDamage_HealthReduces) {
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 100.f);
+
+    pig.takeDamage(30.f);
+    EXPECT_FALSE(pig.isDead());
+}
+
+
+//tests that the pig will die if it takes enough damage
+TEST_F(GameObjectTest, Pig_Dies_WhenHealthReachesZero) {
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 21.f);
+
+    pig.takeDamage(20.f);
+    EXPECT_TRUE(pig.isDead());
+}
+
+
+//tests that the pig doesnt die when nothing happens to it
+TEST_F(GameObjectTest, Pig_NotDead_WithFullHealth) {
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
+        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 50.f);
+
+    EXPECT_FALSE(pig.isDead());
+}
+
+
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
