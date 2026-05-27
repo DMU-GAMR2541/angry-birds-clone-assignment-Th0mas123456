@@ -156,7 +156,7 @@ TEST_F(GameObjectTest, Pig_TakesDamage_HealthReduces) {
 //tests that the pig will die if it takes enough damage
 TEST_F(GameObjectTest, Pig_Dies_WhenHealthReachesZero) {
     Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 21.f);
+        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
 
     pig.takeDamage(20.f);
     EXPECT_TRUE(pig.isDead());
