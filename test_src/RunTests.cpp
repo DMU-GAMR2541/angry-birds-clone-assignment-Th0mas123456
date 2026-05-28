@@ -246,6 +246,24 @@ TEST_F(GameObjectTest, Bird_PositionCorrect_RelativeToWall) {
     EXPECT_LT(bird.getBody()->GetPosition().x, wall.getBody()->GetPosition().x);
 }
 
+
+//test if the pigs constructor is called correctly
+TEST_F(GameObjectTest, Pig_DestructorCalledCorrectly) {
+    bool destroyed = false;
+    {
+        Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    }
+    SUCCEED();
+}
+
+//test if the birds destructor is called correctly
+TEST_F(GameObjectTest, Bird_DestructorCalledCorrectly) {
+    {
+        Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
+    }
+    SUCCEED();
+}
+
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
