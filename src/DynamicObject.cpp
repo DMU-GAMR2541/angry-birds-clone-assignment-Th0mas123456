@@ -39,7 +39,7 @@ DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spri
 	b2_body->CreateFixture(&b2_fixtureDef);
 }
 
-DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour)
+DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour, b2BodyType bodyT)
 {
 
 	sf_shape.setSize(size);
@@ -47,7 +47,7 @@ DynamicObject::DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f si
 	sf_shape.setFillColor(colour);
 
 
-	b2_bodyDef.type = b2_dynamicBody;
+	b2_bodyDef.type = bodyT;
 	b2_bodyDef.position = b2_posIn;
 	b2_body = b2_world.CreateBody(&b2_bodyDef);
 

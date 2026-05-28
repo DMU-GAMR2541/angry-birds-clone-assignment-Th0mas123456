@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include "Enemy.h"
 #include "Slingshot.h"
+#include <box2d/box2d.h>
+#include <SFML/Graphics.hpp>
 #include "Bird.h"
 #include "Pig.h"
 #include "Walls.h"
@@ -130,7 +132,7 @@ protected:
 TEST_F(GameObjectTest, Texture_LoadsSuccessfully) {
     sf::Texture texture;
     bool loaded = texture.loadFromFile("../assets/Ang_Birds/Pigs.png",
-        sf::IntRect(51, 66, 51, 51));
+    sf::IntRect(51, 66, 51, 51));
     EXPECT_TRUE(loaded);
 }
 
@@ -145,8 +147,7 @@ TEST_F(GameObjectTest, Texture_FailsWithInvalidPath) {
 
 //test that the pig shouldn't die if it doesnt take enough damage
 TEST_F(GameObjectTest, Pig_TakesDamage_HealthReduces) {
-    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 100.f);
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 100.f);
 
     pig.takeDamage(30.f);
     EXPECT_FALSE(pig.isDead());
@@ -155,8 +156,7 @@ TEST_F(GameObjectTest, Pig_TakesDamage_HealthReduces) {
 
 //tests that the pig will die if it takes enough damage
 TEST_F(GameObjectTest, Pig_Dies_WhenHealthReachesZero) {
-    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
 
     pig.takeDamage(20.f);
     EXPECT_TRUE(pig.isDead());
@@ -165,8 +165,7 @@ TEST_F(GameObjectTest, Pig_Dies_WhenHealthReachesZero) {
 
 //tests that the pig doesnt die when nothing happens to it
 TEST_F(GameObjectTest, Pig_NotDead_WithFullHealth) {
-    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 50.f);
+    Pig pig(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 50.f);
 
     EXPECT_FALSE(pig.isDead());
 }
@@ -174,8 +173,7 @@ TEST_F(GameObjectTest, Pig_NotDead_WithFullHealth) {
 
 //tests if the birds movement is correct as low speeds
 TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_LowSpeed) {
-    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 5.f, 5.f);
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 5.f, 5.f);
 
     bird.getBody()->ApplyLinearImpulse(b2Vec2(5.f, 0.f), bird.getBody()->GetWorldCenter(), true);
     world->Step(1.f / 60.f, 8, 3);
@@ -185,8 +183,7 @@ TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_LowSpeed) {
 
 //tests if the birds movement is correct at medium speeds
 TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_MediumSpeed) {
-    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 15.f, 15.f);
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 15.f, 15.f);
 
     bird.getBody()->ApplyLinearImpulse(b2Vec2(15.f, 0.f), bird.getBody()->GetWorldCenter(), true);
     world->Step(1.f / 60.f, 8, 3);
@@ -196,8 +193,7 @@ TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_MediumSpeed) {
 
 //tests if the birds movement is correct at high speeds
 TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_HighSpeed) {
-    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),
-        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 50.f, 50.f);
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 50.f, 50.f);
 
     bird.getBody()->ApplyLinearImpulse(b2Vec2(50.f, 0.f), bird.getBody()->GetWorldCenter(), true);
     world->Step(1.f / 60.f, 8, 3);
@@ -207,13 +203,47 @@ TEST_F(GameObjectTest, DynamicObject_MovesCorrectly_HighSpeed) {
 
 //tests if gravity works correctly on the bird
 TEST_F(GameObjectTest, DynamicObject_FallsWithGravity) {
-    Bird bird(*world, b2Vec2(100.f / SCALE, 100.f / SCALE),
-        "../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
+    Bird bird(*world, b2Vec2(100.f / SCALE, 100.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
 
     float initialY = bird.getBody()->GetPosition().y;
     world->Step(1.f / 60.f, 8, 3);
 
     EXPECT_GT(bird.getBody()->GetPosition().y, initialY);
+}
+
+
+//tests if 2 pigs are in different positions relative to eachother
+TEST_F(GameObjectTest, Pig_PositionCorrect_RelativeToOtherPigs_1) {
+    Pig pig1(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    Pig pig2(*world, b2Vec2(200.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+
+    EXPECT_LT(pig1.getBody()->GetPosition().x, pig2.getBody()->GetPosition().x);
+}
+
+
+//tests if 3 pigs are in different positions relative to eachother
+TEST_F(GameObjectTest, Pig_PositionCorrect_RelativeToOtherPigs_2) {
+    Pig pig1(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    Pig pig2(*world, b2Vec2(200.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+    Pig pig3(*world, b2Vec2(300.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+
+    EXPECT_LT(pig2.getBody()->GetPosition().x, pig3.getBody()->GetPosition().x);
+}
+
+//tests if the bird is in a different position relative to the pig
+TEST_F(GameObjectTest, Bird_PositionCorrect_RelativeToPig) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
+    Pig pig(*world, b2Vec2(400.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Pigs.png", sf::IntRect(51, 66, 51, 51), 20.f);
+
+    EXPECT_LT(bird.getBody()->GetPosition().x, pig.getBody()->GetPosition().x);
+}
+
+//tests if the pig is in a different position relative to the wall object
+TEST_F(GameObjectTest, Bird_PositionCorrect_RelativeToWall) {
+    Bird bird(*world, b2Vec2(100.f / SCALE, 500.f / SCALE),"../assets/Ang_Birds/Angry_Birds.png", sf::IntRect(902, 798, 47, 45), 50.f, 10.f, 10.f);
+    Walls wall(*world, b2Vec2(600.f / SCALE, 500.f / SCALE),sf::Vector2f(20.f, 100.f), sf::Color::Red, b2_staticBody);
+
+    EXPECT_LT(bird.getBody()->GetPosition().x, wall.getBody()->GetPosition().x);
 }
 
 int main(int argc, char** argv) {

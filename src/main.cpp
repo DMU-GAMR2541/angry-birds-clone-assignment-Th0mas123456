@@ -51,9 +51,9 @@ int main() {
 
     //vector of wall objects
     std::vector < std::shared_ptr<Walls>> walls;
-    walls.push_back(std::make_shared<Walls>(world, b2Vec2(500.f / SCALE, 500.0f / SCALE), sf::Vector2f(20.f, 100.f), sf::Color(255, 0, 0)));
-    walls.push_back(std::make_shared<Walls>(world, b2Vec2(600.f / SCALE, 500.0f / SCALE), sf::Vector2f(20.f, 100.f), sf::Color(255, 0, 0)));
-    walls.push_back(std::make_shared<Walls>(world, b2Vec2(550.f / SCALE, 390.0f / SCALE), sf::Vector2f(120.f, 20.f), sf::Color(255, 0, 0)));
+    walls.push_back(std::make_shared<Walls>(world, b2Vec2(500.f / SCALE, 500.0f / SCALE), sf::Vector2f(20.f, 100.f), sf::Color(255, 0, 0), b2_dynamicBody));
+    walls.push_back(std::make_shared<Walls>(world, b2Vec2(600.f / SCALE, 500.0f / SCALE), sf::Vector2f(20.f, 100.f), sf::Color(255, 0, 0), b2_dynamicBody));
+    walls.push_back(std::make_shared<Walls>(world, b2Vec2(550.f / SCALE, 390.0f / SCALE), sf::Vector2f(120.f, 20.f), sf::Color(255, 0, 0), b2_dynamicBody));
 
 
   

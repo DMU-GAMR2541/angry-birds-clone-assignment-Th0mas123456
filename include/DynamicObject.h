@@ -18,7 +18,7 @@ public:
 	DynamicObject() = default;
 	DynamicObject(std::string spriteLoc);
 	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn,std::string spriteLoc, sf::IntRect spriteCut);
-	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour);
+	DynamicObject(b2World& b2_world, b2Vec2 b2_posIn, sf::Vector2f size, sf::Color colour, b2BodyType bodyT);
 	virtual ~DynamicObject() = default;
 	void Render(sf::RenderWindow& window) override;
 	void Update();
