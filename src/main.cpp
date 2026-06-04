@@ -9,6 +9,15 @@
 #include "ContactListener.h"
 #include "Walls.h"
 #include "Catapult.h"
+#include <thread>
+#include <future>
+#include <mutex>
+
+void backgroundLoading() {
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+    std::cout << "task complete" << std::endl;
+};
+
 
 int main() {
 
@@ -64,6 +73,8 @@ int main() {
     ContactListener contactListener(gameObjects);
     world.SetContactListener(&contactListener);
 
+    std::thread backgroundThread(backgroundLoading);
+    backgroundThread.join();
 
     //Setup ground for the circle to move / bounce on.
     //Needs to have a body definition and a body. We use a raw pointer for the b2Body as Box2d does the management itself.
