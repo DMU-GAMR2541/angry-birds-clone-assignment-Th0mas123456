@@ -10,8 +10,8 @@
 #include "Walls.h"
 #include "Catapult.h"
 #include <thread>
-#include <future>
-#include <mutex>
+#include "loadingScreen.h"
+
 
 void backgroundLoading() {
     std::this_thread::sleep_for(std::chrono::seconds(2));
@@ -146,6 +146,23 @@ int main() {
     //sf_ballVisual.setOrigin(15.0f, 15.0f);
     //sf_ballVisual.setFillColor(sf::Color::Yellow);
 
+
+    LoadScreen loadScreen(window.getSize());
+
+    while (!loadScreen.isComplete() && window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed) window.close();
+        }
+
+        loadScreen.Update(window.getSize());
+
+        window.clear();
+        loadScreen.Render(window);
+        window.display();
+    }
+
+
     // --- 7. MAIN LOOP ---
     while (window.isOpen()) {
         sf::Event event;
@@ -158,38 +175,6 @@ int main() {
                 birdFired = true;
             }
 
-            // INPUT HANDLING: Press SPACE to launch
-            //if (event.type == sf::Event::KeyPressed) {
-            //    if (event.key.code == sf::Keyboard::Space) {
-            //        // Reset position of the ball so that it can be fired again from its original poisition.
-            //        b2_ballBody->SetTransform(b2Vec2(100.0f / SCALE, 500.0f / SCALE), 0);
-            //        b2_ballBody->SetLinearVelocity(b2Vec2(0, 0));
-            //        b2_ballBody->SetAngularVelocity(0);
-
-            //        // Apply impulse (X-axis, Y-axis) Negative Y is UP in Box2D because gravity is positive.
-            //        b2_ballBody->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
-
-            //        std::cout << "Firing!!!!" << std::endl;
-            //    }
-            //    else if (event.key.code == sf::Keyboard::A) {
-            //        pig.getBody()->ApplyLinearImpulse(b2Vec2(5.0f, -5.0f), b2_ballBody->GetWorldCenter(), true);
-            //    }
-
-            //}
-            // 
-            //Input handling of the bird being launched
-            //if (event.type == sf::Event::MouseButtonPressed) {
-            //    if (event.mouseButton.button == sf::Mouse::Left && !gameObjects.empty()) {
-            //        auto it = gameObjects.find("bird");
-            //        if (it != gameObjects.end()) {
-            //            // checks that the object being launched is a bird before launching
-            //            if (auto bird = std::dynamic_pointer_cast<Bird>(it->second)) {
-            //                bird->getBody()->ApplyLinearImpulse(b2Vec2(bird->getSpeed(), -bird->getSpeed()),bird->getBody()->GetWorldCenter(),true); // performs the launch
-            //                birdFired = true; // sets fired to be true so that the check for the bird being destroyed can use it
-            //            }
-            //        }
-            //    }
-            //}
         }
 
         // Update Physics

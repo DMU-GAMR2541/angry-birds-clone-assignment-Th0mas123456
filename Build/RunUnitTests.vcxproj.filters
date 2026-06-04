@@ -72,6 +72,9 @@
     <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\Walls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\loadingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\angry-birds-clone-assignment-Th0mas123456\CMakeLists.txt" />

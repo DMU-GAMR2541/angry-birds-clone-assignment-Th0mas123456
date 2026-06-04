@@ -387,6 +387,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\StaticObject.h" />
     <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\UI.h" />
     <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\Walls.h" />
+    <ClInclude Include="C:\angry-birds-clone-assignment-Th0mas123456\include\loadingScreen.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
